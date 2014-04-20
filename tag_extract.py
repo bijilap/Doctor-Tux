@@ -21,8 +21,11 @@ class TagExtractor:
 		features=nltk.word_tokenize(question)
 		for f in features:
 			if f in self.complex_tags:
-				print self.complex_tags[f]
-				question=question.replace(self.complex_tags[f],self.complex_tags_replacements[f])
+				#print self.complex_tags[f]
+				#question=question.replace(self.complex_tags[f],self.complex_tags_replacements[f])
+				for ctag in self.complex_tags[f]:
+					#print ctag
+					question=question.replace(ctag,self.complex_tags_replacements[ctag])
 
 		return question
 
@@ -30,5 +33,6 @@ class TagExtractor:
 		features=question.split()
 		for f in features:
 			if f in self.hyponomy_tags:
-				question.replace(f,self.hyponomy_tags[f])
+				#print self.hyponomy_tags[f]
+				question=question.replace(f,self.hyponomy_tags[f])
 		return question

@@ -39,8 +39,12 @@ class DoctorTux:
 			if len(t)>1:
 				t2=tmp.replace('-',' ')
 				#print t2
-				self.complex_tags[t[0]]=t2
-				self.complex_tags_replacements[t[0]]=tmp
+				if t[0] not in self.complex_tags:
+					self.complex_tags[t[0]]=[]
+
+				self.complex_tags[t[0]].append(t2)
+				#self.complex_tags_replacements[t[0]]=tmp
+				self.complex_tags_replacements[t2]=tmp
 
 		qf=open(directory+"Questions&Answers&Tags.csv",'r')
 		rdr=csv.reader(qf)
@@ -78,8 +82,15 @@ class DoctorTux:
 		question=question.lower()
 		question=tagEx.identifyComplextags(question)
 		question=tagEx.resolveHyponomy(question)
-		print question
+		#print question
 
 directory="data/"
 dt=DoctorTux(directory)
 dt.getClosestQuestionSet("How do I install Ubuntu Touch on my laptop?")
+#dt.getClosestQuestionSet("How do I install Ubuntu 12.04.3 on my HP dv6 laptop?")
+#dt.getClosestQuestionSet("I had to make a windows update, this means that you have to restore the windows bootloader, after i did that using installation disc, I wanted to restore or repair my GRUB. How can we restore grub into system with no or minimal boot access?")
+#dt.getClosestQuestionSet("How  to install unity on ubuntu server?")
+#dt.getClosestQuestionSet("how can I create a user with admin rights in ubuntu using command-line ?")
+#dt.getClosestQuestionSet("How to install windows ubuntu (wubi) ?")
+#dt.getClosestQuestionSet("how can I create a user with admin rights in ubuntu using terminal ?")
+#dt.getClosestQuestionSet("How do I install Ubuntu 12.04.3 on my HP dv6 laptop?")

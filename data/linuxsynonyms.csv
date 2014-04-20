@@ -1,0 +1,296 @@
+term,synonym
+/,root
+(dot),working directory
+absolute pathname,relative pathname
+active user,"client process,passive user,XTI (X/Open Transport Interface)"
+Address Resolution Protocol,ARP (Address Resolution Protocol)
+Application Program Interface,API (Application Program Interface)
+apropos,"reference page,man"
+ASCII,text file
+asynchronous event,event
+Asynchronous Transfer Mode,ATM (Asynchronous Transfer Mode)
+awk,"grep,sed"
+background job,background process
+background process,foreground process
+Berkeley Internet Name Domain,BIND (Berkeley Internet Name Domain)
+Berkeley Software Distribution,BSD (Berkeley Software Distribution)
+Berkeley UNIX,BSD (Berkeley Software Distribution)
+/bin directory,"binary file,path,script"
+vi,"ASCII,text file"
+block device,character device
+block device switch table,character device switch table
+blocking mode,synchronous execution
+block special file,device special file
+Bourne shell,shell
+breakpoint,tracepoint
+C,"POSIX,C++,compiler,Java"
+C++,"C,compiler,Java"
+call by reference,call by value
+call by value,call by reference
+CAM (Common Access Method),SCSI (Small Computer System Interface)
+CAM Control Block,CCB (CAM Control Block)
+case insensitive,case sensitive
+case sensitive,case insensitive
+character device,block device
+character device switch table,block device switch table
+child process,parent process
+clist,STREAMS
+Command Description Block,CDB (Command Description Block)
+command history,history list
+command interpreter,"Perl,JavaScript,compiler,shell"
+command interpreter,shell
+Common Access Method,CAM (Common Access Method)
+Common Desktop Environment,CDE (Common Desktop Environment)
+compile,binary file
+compiler,"binary file,compile,command interpreter,object file"
+compile time,run time
+computer virus,virus
+computer worm,worm
+context search,global search
+cooked mode,raw mode
+cron,daemon
+csh,"C shell,shell"
+C shell,shell
+current directory,working directory
+cursor,pointer
+Dataless Management Services,DMS (Dataless Management Services)
+dependency file,dependent
+dependency subset,"SCP (Subset Control Program),subset"
+device special file,block special file
+disk label,"geometry,partition"
+disk partition,partition
+Distributed Computing Environment,DCE (Distributed Computing Environment)
+Distributed File System,DFS (Distributed File System)
+DMS (Dataless Management Services),LAN (Local Area Network)
+domain,domain name system
+domain name system,"communication domain,Internet domain name system"
+down time,up time
+Dynamic Host Configuration Protocol,DHCP (Dynamic Host Configuration Protocol)
+EGP (External Gateway Protocol),Internet
+environment variable,process variable
+EOF,"file mark, end of file"
+escape,quote
+External Gateway Protocol,EGP (External Gateway Protocol)
+field,record
+file mark,EOF (end of file)
+file name expansion,globbing
+flag,"option, parameter, argument, switch"
+foreground job,foreground process
+foreground process,background process
+fork,parent process
+full installation,update installation
+full pathname,absolute pathname
+full-screen editor,line editor
+geometry,disk label
+gid,"GID, group ID"
+global character,wildcard character
+grep,regular expression
+group,login group
+group ID (GID),"user ID (UID),process ID (PID)"
+hard link,symbolic link
+header file,include file
+$HOME,"$home,environment variable"
+$home,"$HOME,process variable"
+login directory.,working directory
+Host Bus Adapter,HBA (host bus adapter)
+HTML,PDF file
+HyperText Markup Language,HTML (HyperText Markup Language)
+I18N,internationalization
+ICMP (Internet Control Message Protocol),IP (Internet Protocol)
+#include,include file
+include file,#include
+locale,<strong>locale</strong>
+International Standards Organization,ISO (International Standards Organization)
+Internet,TCP/IP
+Internet Control Message Protocol,ICMP (Internet Control Message Protocol)
+Internet domain name system,"communication domain,domain name system,Internet"
+Internet Protocol,IP (Internet Protocol)
+IP gateway,IP router
+Java,C++
+JavaScript,script
+kernel,"shell,microkernel"
+sh,"POSIX, Bourne shell, shell, bash, script"
+L10N,localization
+label,disk label
+LAT (Local Area Transport),LAN (Local Area Network)
+lex,"lexical analyzer,parser,yacc (Yet Another Compiler-Compiler)"
+lexical analyzer,parser
+Lexical Analyzer Generator,lex
+line editor,full-screen editor
+link,"hard link,symbolic link"
+local area network,LAN (Local Area Network)
+local area transport,LAT (Local Area Transport)
+locale,internationalization
+localization,"locales,internationalization"
+logical unit number,LUN (Logical Unit Number)
+login directory,home directory
+login group,group
+loop,infinite loop
+LUN (Logical Unit Number),SCSI
+macro,instruction
+makefile,make
+man,"apropos,reference page"
+Management Information Base,MIB (Management Information Base)
+manpage,"manual page, reference page"
+MANPATH,search path
+Memory File System,MFS (Memory File System)
+MIB (Management Information Base),RFC
+microkernel,kernel
+middleware,"COM
+for Tru64 UNIX"
+mirroring,"RAID (redundant array of independent disks),striping"
+chmod,octal
+Motif,OSF/Motif
+mount,unmount
+NetRAIN (Redundant Array of Network Adaptors),LAN
+Network File System,NFS (Network File System)
+NFS-mounted,NFS (Network File System)
+nonblocking mode,asynchronous execution
+object file,"binary file,compiler"
+Open Systems Interconnection,OSI (Open Systems Interconnection)
+parent process,fork
+parser,lexical analyzer
+passive user,"client process,active user,XTI (X/Open Transport Interface)"
+patch,dupatch
+$PATH,$path
+$path,$PATH
+path,"$PATH,$path"
+pathname qualifier,variable modifier
+pattern matching,regular expression
+awk,"scripting,C,<strong>sed</strong>,<strong>awk</strong>,script"
+permission code,permissions
+permission field,permissions
+pid,"PID, process ID"
+pipe,pipeline
+piping,pipeline
+Point-to-Point Protocol,PPP (Point-to-Point Protocol)
+pointer,cursor
+POSIX (Portable Operating System Interface),"C,SVID (System V Interface Definition)"
+Korn,"Korn shell, Bourne shell, ksh, POSIX, shell"
+PostScript,PDF file
+PPP (Point-to-Point Protocol),SLIP (Serial Line Internet Protocol)
+process ID (PID),"group ID (GID),user ID (UID)"
+process identification,process ID (PID)
+process variable,environment variable
+profile data,profiling
+pseudoterminal,software simulation
+pseudoterminal,pseudodevice
+pseudo-tty,pseudoterminal
+pty,pseudoterminal
+pwd,working directory
+queue daemon,"queue,daemon,job"
+quote,escape
+RAID,"redundant array of independent disks, striping, mirroring"
+raw mode,cooked mode
+RCS (Revision Control System),SCCS (Source Code Control System)
+Redundant Array of Network Adaptors,NetRAIN (Redundant Array of Network Adaptors)
+regular expression,pattern matching
+relative pathname,absolute pathname
+Request For Comments,RFC (Request For Comments)
+Revision Control System,RCS (Revision Control System)
+RIS area,RIS server
+RIS server,RIS clients
+root,pathname
+root directory,root
+root login,root
+routing daemon,daemon
+run time,compile time
+SCCS (Source Code Control System),RCS (Revision Control System)
+script,shell
+SCSI Interface Module,SIM (SCSI Interface Module)
+Serial Line Internet Protocol,SLIP (Serial Line Internet Protocol)
+session,terminal session
+setld,subset
+POSIX shell,Bourne shell
+POSIX,"Bourne,Korn,POSIX,script"
+silent character,hidden character
+Simple Mail Transfer Protocol,SMTP (Simple Mail Transfer Protocol)
+Simple Network Management Protocol,SNMP (Simple Network Management Protocol)
+SLIP (Serial Line Internet Protocol),PPP (Point-to-Point Protocol)
+socketpair,pipe
+soft link,symbolic link
+Source Code Control System,SCCS (Source Code Control System)
+source hierarchy,target hierarchy
+special file,device special file
+stderr,standard error
+stdin,standard input
+stdout,standard output
+sed,standard stream editor
+STREAMS,"clist,STREAMS framework"
+striping,"RAID (redundant array of independent disks),mirroring"
+su,superuser
+subset control program,SCP (Subset Control Program)
+suspended,terminate
+SVID (System V Interface Definition),POSIX (Portable Operating System Interface)
+switch,option
+symbolic link,hard link
+System V Interface Definition,SVID (System V Interface Definition)
+System V Verification Suite,SVVS (System V Verification Suite)
+target hierarchy,source hierarchy
+TCP/IP,"TCP (Transmission Control Protocol),IP (Internet Protocol)"
+termcap database,terminfo database
+terminate,"suspend, suspended"
+terminfo database,termcap database
+text file,"ASCII,binary file"
+C,"POSIX,Korn,C"
+tracepoint,breakpoint
+Transmission Control Protocol,TCP (Transmission Control Protocol)
+Trojan Horse,"virus,worm"
+UBC (Unified Buffer Cache),VFS (Virtual File System)
+uid,"UID, user ID"
+unified buffer cache,UBC (Unified Buffer Cache)
+UNIX-to-UNIX Copy Program,UUCP (UNIX-to-UNIX Copy Program)
+update installation,full installation
+up time,down time
+URL,Uniform Resource Locator
+User Datagram Protocol,UDP (User Datagram Protocol)
+user ID (UID),"group ID (GID),process ID (PID)"
+user name,login name
+version control system,version control library
+vi editor,full-screen editor
+Virtual File System,VFS (Virtual File System)
+virus,"Trojan Horse,worm"
+visual editor,full-screen editor
+WEBES (Web-Based Enterprise Services ),"Compaq Analyze,Insight Manager"
+wildcard character,"metacharacter,regular expression"
+working directory,home directory
+worm,"Trojan Horse,virus"
+X/Open Transport Interface,XTI (X/Open Transport Interface)
+yacc (Yet Another Compiler-Compiler),"lex,parser"
+Add-on,plugin
+address,addressbook
+File roller,archive
+boot,"bootloader, grub, grub2"
+CD,"CD-ROM, Compact Disc"
+character encoding,"UTF-8, ASCII"
+CLI,"Command line interface, shell, script"
+codec,"decode, encode"
+CUPS,Common UNIX Printing System
+deb,"Debian package, installer"
+desktop environment,"desktop, GNOME, KDE, Xfce, Metacity, Kwin, Xfwm, GTK+, Qt, GTK+"
+dpkg,"Debian package, APT, Debian, package, package management system"
+file system,"NTFS, FAT, ext3"
+FLOSS,Free Libre Open-Source Software
+fsck,"file system check, chkdsk"
+gedit,text editor
+GIMP,Image manipulaion
+GNU,Linux
+GPL,License
+GRUB,"bootloader, LILO"
+Host,"VMWare, workstation, virtual machine, VM"
+IDE,"integrated development environment, programming"
+ISO,ISO 9660
+Kubuntu,KDE
+MIME,"Internet mail extensions, format, attachment"
+mount,file system
+nano,curses
+Nautilus,file manager
+offline,"disconnected,"
+online,connected
+OpenBox,X11
+security,"security, patch, update"
+SSH,secure shell
+sudo,"rootsudo, admin"
+sudoer,sudo
+tar,"zip, file archive, rar, tar.gz"
+Xubuntu,Xfce

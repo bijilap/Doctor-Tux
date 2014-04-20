@@ -10,21 +10,63 @@ from tag_extract import TagExtractor
 class DoctorTux:
 
 	questions=[[]]
+	answers=[]
 	tags={}
 	questionsForTags={}
 	tagsInQuestions={}
 	synonym_tags={}
+	complex_tags={}
 
 	def __init__(self,directory):
 		#get list of all tags that can be simplified into synonym tags
-		stf = open(directory+"tags_synonym.csv", 'r')
+		stf = open(directory+"tags_synonym.csv", 'r') #converting each tag to its hypernym
 		rdr= csv.reader(stf)
-		for r in rdr:
+		for r in rdr:  
+			#r[0]=tag  r[1]=tag it should be replaced with
 			self.synonym_tags[r[0]]=r[1]
 		stf.close()
 
-		qf=open(directory+"Questions&Answers.csv",'r')
+		tf=open(directory+"tags.csv", 'r') #assign wieght for tag for each tag
+		rdr=csv.reader(tf)
+		for r in rdr:
+			tmp=r[0].split(';') #tmp[0]=tag      tmp[1]=frequency
+			self.tags[tmp[0]]=float(1/float(tmp[1]))
+		tf.close()
 
+		for tmp in self.tags:
+			t=tmp.split('-')
+			if len(t)>1:
+				self.complex_tags[t[0]]=tmp
+
+
+		qf=open(directory+"Questions&Answers&Tags.csv",'r')
+		rdr=csv.reader(qf)
+		for r in rdr: #r[0]:question title r[1]=question title r[2]: best answer r[3]: tags
+			if r[0][len(r[0])-1] not in ['!','?','.']:
+				r[0]=r[0]+'.'
+			r[1]=nltk.clean_html(r[1])
+			r[2]=nltk.clean_html(r[2])
+			r[0]=r[0]+' '+r[1]
+			self.questions.append(r[0])
+			self.answers.append(r[1])
+			n=len(self.questions)-1
+			r[3]=r[3].replace('<','')
+			r[3]=r[3].replace('>',' ')
+			tmplist=r[3].split(' ')
+			for t in tmplist:
+				if t in self.synonym_tags:
+					r[3]=r[3].replace(t,self.synonym_tags[t])
+
+			tmplist=r[3].split(' ')
+			tmplist.pop()
+			self.tagsInQuestions[n]=tmplist
+			for t in tmplist:
+				if t not in self.questionsForTags:
+					self.questionsForTags[t]=[]
+				self.questionsForTags[t].append(n)
+
+		qf.close()
+		print self.questionsForTags
 
 
 
@@ -33,3 +75,4 @@ class DoctorTux:
 
 
 directory="data/"
+dt=DoctorTux(directory)

@@ -36,3 +36,12 @@ class TagExtractor:
 				#print self.hyponomy_tags[f]
 				question=question.replace(f,self.hyponomy_tags[f])
 		return question
+
+	def getTagsFromQuestion(self,questions):
+		features=questions.split()
+		tagList=[]
+		for f in features:
+			if f in self.tags:
+				tagList.append(f)
+
+		return tagList

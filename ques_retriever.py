@@ -3,6 +3,7 @@
 #
 
 import nltk
+import operator
 
 class QuestionRetriever:
 	questionsForTags={} #list of questions corresponding to a tag 
@@ -27,7 +28,7 @@ class QuestionRetriever:
 			final_list=[]
 			sorted_list=sorted(relevantQues.iteritems(), key=operator.itemgetter(1))
 			for s in range(len(sorted_list)-10,len(sorted_list)-1):
-				final_list.append(sorted_x[s][0])
+				final_list.append(sorted_list[s][0])
 
 
 		return final_list

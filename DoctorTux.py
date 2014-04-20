@@ -16,6 +16,7 @@ class DoctorTux:
 	tagsInQuestions={}
 	synonym_tags={}
 	complex_tags={}
+	complex_tags_replacements={}
 
 	def __init__(self,directory):
 		#get list of all tags that can be simplified into synonym tags
@@ -36,8 +37,10 @@ class DoctorTux:
 		for tmp in self.tags:
 			t=tmp.split('-')
 			if len(t)>1:
-				self.complex_tags[t[0]]=tmp
-
+				t2=tmp.replace('-',' ')
+				#print t2
+				self.complex_tags[t[0]]=t2
+				self.complex_tags_replacements[t[0]]=tmp
 
 		qf=open(directory+"Questions&Answers&Tags.csv",'r')
 		rdr=csv.reader(qf)
@@ -66,13 +69,17 @@ class DoctorTux:
 				self.questionsForTags[t].append(n)
 
 		qf.close()
-		print self.questionsForTags
+		#print self.questionsForTags
+	
 
-
-
-
-
-
+	def getClosestQuestionSet(self,question):
+		tagEx=TagExtractor(self.tags,self.complex_tags,self.synonym_tags,self.complex_tags_replacements)
+		quesRet=QuestionRetriever(self.questionsForTags, self.tags,self.questions)
+		question=question.lower()
+		question=tagEx.identifyComplextags(question)
+		question=tagEx.resolveHyponomy(question)
+		print question
 
 directory="data/"
 dt=DoctorTux(directory)
+dt.getClosestQuestionSet("How do I install Ubuntu Touch on my laptop?")

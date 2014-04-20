@@ -25,10 +25,10 @@ class QuestionRetriever:
 				else: 
 					relevantQues[q]=self.tags[tag]
 			
-			final_list=[]
-			sorted_list=sorted(relevantQues.iteritems(), key=operator.itemgetter(1))
-			for s in range(len(sorted_list)-10,len(sorted_list)-1):
-				final_list.append(sorted_list[s][0])
+		final_list=[]
+		sorted_list=sorted(relevantQues.iteritems(), key=operator.itemgetter(1))
+		for s in range(len(sorted_list)-10,len(sorted_list)-1):
+			final_list.append(sorted_list[s][0])
 
 
 		return final_list
